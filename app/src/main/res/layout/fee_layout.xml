@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/feelayout">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="应收费￥:"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/yingshou"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="请填写应收费用"
+            android:selectAllOnFocus="true"
+            android:inputType="number"
+            android:lines="1"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="实收费￥:"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/shishou"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="请填写实收费用"
+            android:selectAllOnFocus="true"
+            android:inputType="number"
+            android:lines="1"
+            />
+    </TableRow>
+</TableLayout>

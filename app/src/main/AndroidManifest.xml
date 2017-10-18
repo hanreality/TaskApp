@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.punuo.sys.app.taskapp">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 访问网络连接权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ninghu"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.MyTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Conserve"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.Wrecker" />
+
+        <receiver android:name=".receiver.TaskReceiver">
+            <intent-filter>
+                <action android:name="com.punuo.sys.app.task_receive" />
+            </intent-filter>
+        </receiver>
+        <activity
+        android:name=".ui.Execute"
+        android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MyCamera"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.VideoLook"
+            android:screenOrientation="portrait"/>
+        <activity
+        android:name=".ui.AlbumAty"
+        android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AlbumItemAty"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

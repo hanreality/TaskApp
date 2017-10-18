@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lllayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/guide_round"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/new_task"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dip"
+                        android:text="新工单"
+                        android:textColor="@color/green"
+                        android:textSize="15dip" />
+                    <View
+                        android:id="@+id/b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#00129d"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|right|center"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/unread_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tab_unread_bg"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/guide_round"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:saveEnabled="false">
+
+            <TextView
+                android:id="@+id/unfinished"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="未完成"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <View
+                android:id="@+id/b2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#00129d"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/guide_round"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/finished"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="已完成"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <View
+                android:id="@+id/b3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#00129d"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

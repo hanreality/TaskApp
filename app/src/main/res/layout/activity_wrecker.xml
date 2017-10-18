@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/top1" />
+
+        <include layout="@layout/top2" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/new_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:divider="@drawable/reader_item_divider"
+        />
+    <!-- 未完成工单对应显示的界面 -->
+    <ListView
+        android:id="@+id/unfinished_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:divider="@drawable/reader_item_divider"
+        android:visibility="gone"
+        />
+    <!-- 已完成工单显示的界面 -->
+    <ListView
+        android:id="@+id/finished_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llayout"
+        android:divider="@drawable/reader_item_divider"
+        android:visibility="gone"
+        />
+</RelativeLayout>
